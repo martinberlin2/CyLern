@@ -1,0 +1,5 @@
+Backlog -- myCypress
+
+Team_More_Members; in free license 3 members possible
+CI; Continuous Development... Anbieter abwarte wie EZB das macht
+	;https://docs.cypress.io/guides/continuous-integration/github-actions#Basic-Setup

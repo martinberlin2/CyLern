@@ -1,0 +1,21 @@
+- Im Browser, kein geckodriver
+- In der App - Zugriff auf alles
+- Lokal
+
+- CI Cont INt: Feature Branch Test failed -> Merge Test, Push blocked
+
+- CI/CD workflow.... Github secrets...Token setzen, kann in Code abgefragt werden
+
+Home
+PS C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Cypress\node_modules\.bin> .\cypress open
+geht, UI geht auf 
+
+cypress initializing config... aber https://docs.cypress.io/guides/references/changelog#10-0-0
+We introduced several breaking changes to the Cypress configuration file 
+
+-----------------------------
+cypress open  --browser firefox
+(default wäre Electron, cy eigener Browser)
+
+node_modules\.bin\cypress open --browser firefox
+

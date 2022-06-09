@@ -1,0 +1,6 @@
+git push origin --delete martinberlin2/CypressLern 
+---------------------------
+
+bei existierendem Repo lokale 
+git init
+git clone https://github.com/martinberlin2/CypressLern 

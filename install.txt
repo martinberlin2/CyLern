@@ -1,0 +1,56 @@
+
+https://docs.cypress.io/guides/getting-started/installing-cypress#npm-install
+
+Reihenfolge:
+- PowerShell v2+ (minimum is v3 for install from this website due to TLS 1.2 requirement) -- habe Visual Studio Debuggable Package Manager PowerShell
+- .NET Framework 4+ (the installation will attempt to install .NET 4.0 if you do not have it installed)(minimum is 4.5 for install from this website due to TLS 1.2 requirement)
+- chokolatey   noch drauf vom ersten mal
+- nodist Node.js Node version manager   .... choco install nodist
+	powershell, as admin -- ok
+	C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Cypress>
+	dann erst: npm init !!
+- npm ... dann schon drauf !! 
+- Cypress 
+startet mit 
+C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Cypress\node_modules\.bin> cypress open 
+
+ .\cypress open --browser firefox   
+ mit Firefox... .\ weil es zwei cypress - commands gibt
+ 
+
+--- install -- 
+zuhause
+C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Cypress>
+dann erst: npm init !!
+
+---------- INSTALL ----- im Büro
+https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
+
+
+
+C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung>md CYpress
+
+C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung>cd CYpress
+
+C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung\CYpress>npm install cypress --save-dev
+
+> cypress@9.7.0 postinstall C:\Users\Lap126\node_modules\cypress
+> node index.js --exec install
+
+Installing Cypress (version: 9.7.0)
+
+√  Downloaded Cypress
+√  Unzipped Cypress
+√  Finished Installation C:\Users\Lap126\AppData\Local\Cypress\Cache\9.7.0
+
+You can now open Cypress by running: node_modules\.bin\cypress open
+
+https://on.cypress.io/installing-cypress
+
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Users\Lap126\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Users\Lap126\package.json'
+npm WARN Lap126 No description
+npm WARN Lap126 No repository field.
+npm WARN Lap126 No README data
+npm WARN Lap126 No license field.

@@ -1,0 +1,32 @@
+Artikel zum Vergleich Selenium - Cypress
+
+Cypress direkt Browser ohne webdriver
+	dafür Mocha, NodeJS, eine IDE
+	
+Cypress integriert mit Rx, Teams, SE, Slack, WordPress
+
+Nur JS  (SE 6 Sprachen)
+
+Cypress is not a preferred option for web scraping (or web crawling) and performance testing.
+
+Nachteile Cypress
+Selenium can be used against different browsers and OS combinations, whereas Cypress is only available for Chrome, Firefox, Edge, Brave, and Electron browsers. This makes Cypress a less-preferred choice for cross browser testing.
+
+As mentioned in the ‘Permanent Trade-Off section’ on the Cypress website, Cypress will never have support for handling multiple browser tabs. On the other hand, it is relatively easy to handle multiple browser tabs in Selenium.
+
+By default, Cypress does not support multiple-browser instances or control more than one open browser simultaneously. A workaround in Cypress is available to use two browser instances simultaneously or synchronize Cypress with other back-end processes (e.g., Selenium, Puppeteer, etc.) for driving the 2nd open browser.
+
+With Cypress, tests are limited to visiting domains that are determined to be of the same origin. By that rule, you can never visit two domains of different origins in the same test. However, it is possible to visit two or more domains that are arising from different origins in different tests.
+
+Selenium Grid --- wenn man mehrere Devices und Browser parallel testen muss 
+
+--> Selenese
+While Selenium IDE records your test cases, it automatically generates a Selenese script for every interaction that you make with the browser. Selenese is a scripting language exclusive to Selenium. It offers commands for various browser operations such as click a button, select values from drop-down etc.
+
+SE 3 sucht notfalls eigenen Locator
+However, the new Selenium IDE 3.x version has overcome this problem by capturing numerous locators while recording the test cases. Now, if any locator is changed due to the UI transformation then the Selenium IDE will look for some other locator. So in this regard, your test would now fail only if all of the locators that were present while recording the test are changed.
+
+ Selenium IDE 3.x  mit Cross Browser Support
+ 
+ Monkey testing, we try to break the system by giving a random input
+ You can generate test scripts to automate monkey testing with Selenium. For example, you can have a program that constantly generates random click over a webpage by looking for web locators.
