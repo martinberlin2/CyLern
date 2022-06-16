@@ -5,5 +5,6 @@ describe('My First Test', function() {
     cy.get('#twotabsearchtextbox').type('Superman')
     cy.get('.nav-search-submit .nav-input').click()
     cy.get('span.a-color-state').contains('Superman')
+	alert('TC 1stTest Ende');
   })
 })

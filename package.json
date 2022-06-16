@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "cypress home",
   "main": "index.js",
-  "dependencies": {
-    "cypress": "^10.0.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "test-cypress"
   },
   "author": "martin2",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.7.0"
+  }
 }

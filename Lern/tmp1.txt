@@ -1,0 +1,26 @@
+node_modules\.bin\cypress open --browser "C:\Program Files\Mozilla Firefox\firefox"
+
+
+choco upgrade chocolatey
+
+fr 1006: da Fehler neu ist, uninstall Cy 10 und zurück auf cy 9 
+
+
+node_modules\.bin\cypress open
+
+LERN !
+npm 
+A module is any file or directory in the node_modules directory that can be loaded by the Node.js require() function.
+
+To be loaded by the Node.js require() function, a module must be one of the following:
+
+    A folder with a package.json file containing a "main" field.
+    A JavaScript file.
+
+**Note:** Since modules are not required to have a `package.json` file, not all modules are packages. Only modules that have a `package.json` file are also packages.
+
+In the context of a Node program, the module is also the thing that was loaded from a file. For example, in the following program:
+
+var req = require('request')
+
+we might say that "The variable req refers to the request module".

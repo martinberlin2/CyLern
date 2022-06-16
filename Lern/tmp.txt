@@ -1,0 +1,21 @@
+WE
+-- SE data driven weiter ?
+
+node_modules\.bin\cypress open --browser C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Firefox100\firefox.exe
+
+install cyprus
+--------------
+https://docs.cypress.io/
+
+npm install cypress --save-dev
+
+http fetch GET 200 https://registry.npmjs.org/cypress/-/cypress-10.0.3.tgz 2742ms (cache miss)
+--kein Suchergebnis
+
+... wurde aber fertig
+danach
+  npm: '8.11.0',
+  node: '16.15.1',
+
+Aufruf: im Projektverz
+node_modules\.bin\cypress open

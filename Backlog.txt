@@ -1,5 +1,22 @@
 Backlog -- myCypress
 
-Team_More_Members; in free license 3 members possible
-CI; Continuous Development... Anbieter abwarte wie EZB das macht
+FEA Feature: neue Fähigkeit 
+DEF Defect - z.B. nach Merge eines neuen Features, der in eigenem Branch gefixt werden muss 
+DEB Technical Debt - Defect, der erstmal toleriert wird
+	DEB für jeden TC einzeln, der nach Merge nicht läuft
+
+fea getTitle
+fea Harness_Start_TC : nur aus UI oder auch Script?
+
+def Conn_to_Firefox : führt TC nur in eigenem Browser aus 
+	https://github.com/cypress-io/cypress/issues/22086
+	
+fea notepad++ als IDE
+
+fea Team_More_Members; in free license 3 members possible
+
+
+CI; Continuous Development... Anbieter abwarten wie EZB das macht
 	;https://docs.cypress.io/guides/continuous-integration/github-actions#Basic-Setup
+	
+

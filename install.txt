@@ -54,3 +54,16 @@ npm WARN Lap126 No description
 npm WARN Lap126 No repository field.
 npm WARN Lap126 No README data
 npm WARN Lap126 No license field.
+
+
+#############################
+https://stackoverflow.com/questions/72570479/cypress-error-when-upgrade-from-version-9-to-version-10
+
+und https://issuemode.com/issues/cypress-io/cypress/89905674
+
+node hab ich updated. 
+
+Problem: ab Cy 10 Klassensyntax , bis 9 auch ohne.
+Deshalb Fehler bei run_plugins....
+
+Da keine Lösung für Cy 10, plan: deinstallieren und Cy 9

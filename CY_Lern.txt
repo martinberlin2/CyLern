@@ -19,3 +19,183 @@ cypress open  --browser firefox
 
 node_modules\.bin\cypress open --browser firefox
 
+Harness:
+C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Cy\cypress\integration
+alles rekursiv ? 
+Verz. alph. sortiert und so aufgerufen
+
+
+##########
+Aufruf 
+Cypress.Commands.add('clickLink', (label) => {
+  cy.get('a').contains(label).click()
+})
+
+cy.clickLink('Buy Now')
+
+######################
+https://docs.cypress.io/guides/end-to-end-testing/protractor-to-cypress#Introduction
+
+
+    Passed:120
+    Failed:--
+    Pending:--
+    83.12
+
+All Specs
+
+    example to-do app
+        displays two todo items by defaultpassed
+        can add new todo itemspassed
+        can check off an item as completedpassed
+        with a checked task
+            can filter for uncompleted taskspassed
+            can filter for completed taskspassed
+            can delete all completed taskspassed
+    Actions
+        .type() - type into a DOM elementpassed
+        .focus() - focus on a DOM elementpassed
+        .blur() - blur off a DOM elementpassed
+        .clear() - clears an input or textarea elementpassed
+        .submit() - submit a formpassed
+        .click() - click on a DOM elementpassed
+        .dblclick() - double click on a DOM elementpassed
+        .rightclick() - right click on a DOM elementpassed
+        .check() - check a checkbox or radio elementpassed
+        .uncheck() - uncheck a checkbox elementpassed
+        .select() - select an option in a <select> elementpassed
+        .scrollIntoView() - scroll an element into viewpassed
+        .trigger() - trigger an event on a DOM elementpassed
+        cy.scrollTo() - scroll the window or element to a positionpassed
+    Aliasing
+        .as() - alias a DOM element for later usepassed
+        .as() - alias a route for later usepassed
+    Assertions
+        Implicit Assertions
+            .should() - make an assertion about the current subjectpassed
+            .and() - chain multiple assertions togetherpassed
+        Explicit Assertions
+            expect - make an assertion about a specified subjectpassed
+            pass your own callback function to should()passed
+            finds element by class name regexpassed
+            can throw any errorpassed
+            matches unknown text between two elementspassed
+            assert - assert shape of an objectpassed
+            retries the should callback until assertions passpassed
+    Connectors
+        .each() - iterate over an array of elementspassed
+        .its() - get properties on the current subjectpassed
+        .invoke() - invoke a function on the current subjectpassed
+        .spread() - spread an array as individual args to callback functionpassed
+        .then()
+            invokes a callback function with the current subjectpassed
+            yields the returned value to the next commandpassed
+            yields the original subject without returnpassed
+            yields the value yielded by the last Cypress command insidepassed
+    Cookies
+        cy.getCookie() - get a browser cookiepassed
+        cy.getCookies() - get browser cookiespassed
+        cy.setCookie() - set a browser cookiepassed
+        cy.clearCookie() - clear a browser cookiepassed
+        cy.clearCookies() - clear browser cookiespassed
+    Cypress.Commands
+        .add() - create a custom commandpassed
+    Cypress.Cookies
+        .debug() - enable or disable debuggingpassed
+        .preserveOnce() - preserve cookies by keypassed
+        .defaults() - set defaults for all cookiespassed
+    Cypress.arch
+        Get CPU architecture name of underlying OSpassed
+    Cypress.config()
+        Get and set configuration optionspassed
+    Cypress.dom
+        .isHidden() - determine if a DOM element is hiddenpassed
+    Cypress.env()
+        Get environment variablespassed
+    Cypress.log
+        Control what is printed to the Command Logpassed
+    Cypress.platform
+        Get underlying OS namepassed
+    Cypress.version
+        Get current version of Cypress being runpassed
+    Cypress.spec
+        Get current spec informationpassed
+    Files
+        cy.fixture() - load a fixturepassed
+        cy.fixture() or require - load a fixturepassed
+        cy.readFile() - read file contentspassed
+        cy.writeFile() - write to a filepassed
+    Local Storage
+        cy.clearLocalStorage() - clear all data in local storagepassed
+    Location
+        cy.hash() - get the current URL hashpassed
+        cy.location() - get window.locationpassed
+        cy.url() - get the current URLpassed
+    Misc
+        .end() - end the command chainpassed
+        cy.exec() - execute a system commandpassed
+        cy.focused() - get the DOM element that has focuspassed
+        cy.wrap() - wrap an objectpassed
+        Cypress.Screenshot
+            cy.screenshot() - take a screenshotpassed
+            Cypress.Screenshot.defaults() - change default config of screenshotspassed
+    Navigation
+        cy.go() - go back or forward in the browser's historypassed
+        cy.reload() - reload the pagepassed
+        cy.visit() - visit a remote urlpassed
+    Network Requests
+        cy.request() - make an XHR requestpassed
+        cy.request() - verify response using BDD syntaxpassed
+        cy.request() with query parameterspassed
+        cy.request() - pass result to the second requestpassed
+        cy.request() - save response in the shared test contextpassed
+        cy.intercept() - route responses to matching requestspassed
+    Querying
+        cy.get() - query DOM elementspassed
+        cy.contains() - query DOM elements with matching contentpassed
+        .within() - query DOM elements within a specific elementpassed
+        cy.root() - query the root DOM elementpassed
+        best practices - selecting elementspassed
+    Spies, Stubs, and Clock
+        cy.spy() - wrap a method in a spypassed
+        cy.spy() retries until assertions passpassed
+        cy.stub() - create a stub and/or replace a function with stubpassed
+        cy.clock() - control time in the browserpassed
+        cy.tick() - move time in the browserpassed
+        cy.stub() matches depending on argumentspassed
+        matches call arguments using Sinon matcherspassed
+    Traversal
+        .children() - get child DOM elementspassed
+        .closest() - get closest ancestor DOM elementpassed
+        .eq() - get a DOM element at a specific indexpassed
+        .filter() - get DOM elements that match the selectorpassed
+        .find() - get descendant DOM elements of the selectorpassed
+        .first() - get first DOM elementpassed
+        .last() - get last DOM elementpassed
+        .next() - get next sibling DOM elementpassed
+        .nextAll() - get all next sibling DOM elementspassed
+        .nextUntil() - get next sibling DOM elements until next elpassed
+        .not() - remove DOM elements from set of DOM elementspassed
+        .parent() - get parent DOM element from DOM elementspassed
+        .parents() - get parent DOM elements from DOM elementspassed
+        .parentsUntil() - get parent DOM elements from DOM elements until elpassed
+        .prev() - get previous sibling DOM elementpassed
+        .prevAll() - get all previous sibling DOM elementspassed
+        .prevUntil() - get all previous sibling DOM elements until elpassed
+        .siblings() - get all sibling DOM elementspassed
+    Utilities
+        Cypress._ - call a lodash methodpassed
+        Cypress.$ - call a jQuery methodpassed
+        Cypress.Blob - blob utilities and base64 string conversionpassed
+        Cypress.minimatch - test out glob patterns against stringspassed
+        Cypress.Promise - instantiate a bluebird promisepassed
+    Viewport
+        cy.viewport() - set the viewport size and dimensionpassed
+    Waiting
+        cy.wait() - wait for a specific amount of timepassed
+        cy.wait() - wait for a specific routepassed
+    Window
+        cy.window() - get the global window objectpassed
+        cy.document() - get the document objectpassed
+        cy.title() - get the titlepassed
+
