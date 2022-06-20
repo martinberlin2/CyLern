@@ -1,7 +1,4 @@
-echo ... starte Cypress 9 mit Chrome
+@echo off
+echo ... starte Cypress 9, die machen Chrome
 node_modules\.bin\cypress open --browser chrome
 echo ... Cypress beendet
-
-
-
-echo einmal kam Firefox 100. Browser konfigurieren...!!!

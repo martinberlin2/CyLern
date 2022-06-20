@@ -14,11 +14,9 @@ context('DOM_Attributes', () => {
   })
   
   it('titleProjekte', () => {
-	cy.visit(' https://auticon.de/projekte-services/')
+	cy.visit('https://auticon.de/projekte-services/')
 	cy.title().should('eq','Projekte & Services - auticon')
 	alert(cy.title())
   })
- 
-  
   
 })

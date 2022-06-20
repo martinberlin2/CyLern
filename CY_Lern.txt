@@ -6,6 +6,8 @@
 
 - CI/CD workflow.... Github secrets...Token setzen, kann in Code abgefragt werden
 
+https://docs.cypress.io/guides/end-to-end-testing/protractor-to-cypress#What-you-ll-learn
+
 Home
 PS C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Cypress\node_modules\.bin> .\cypress open
 geht, UI geht auf 

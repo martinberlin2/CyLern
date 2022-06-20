@@ -1,3 +1,5 @@
 first commit, only first learn files
 
-in der Shell Still waiting to connect to Firefox, retrying in 1 second (attempt 59/62) ... aber ich kann sehen dass er es macht! getTitle auch von Unterseiten, Trennung Testcase-Repo und Execution List
+in der Shell Still waiting to connect to Firefox, retrying in 1 second (attempt 59/62) ... aber ich kann sehen dass er es macht! getTitle auch von Unterseiten, Trennung Testcase-Repo und Execution List. Mit Dilbert-TC angefangen, aber getTitle bei auticon.de läuft
+
+jetzt Chrome. Selector Playground... ????
