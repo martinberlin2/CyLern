@@ -10,3 +10,4 @@ module.exports = defineConfig({
 });
 
 // npx cypress run --record --key 5061b932-cdb8-4aa0-a047-bd6f42c65335
+// worklab: cy 10
