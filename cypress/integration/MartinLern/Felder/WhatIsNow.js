@@ -31,9 +31,8 @@ context('WhatIsNow', () => {
  
 
 	 it('picking_Today', async() => { 
-		/* let today = "init"
-		alert(today + " vorher")  */ 
-		let today = await(cy.getToday() )
+		let today = "init" 
+		today = await(cy.getToday() )
 		alert(today)
 	})
 
