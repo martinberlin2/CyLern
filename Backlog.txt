@@ -5,13 +5,24 @@ DEF Defect - z.B. nach Merge eines neuen Features, der in eigenem Branch gefixt 
 DEB Technical Debt - Defect, der erstmal toleriert wird
 	DEB für jeden TC einzeln, der nach Merge nicht läuft
 
-fea getTitle
+EZB
+Felder ansprechen; vor allem Eingabefelder -- Felder.js
+Type, read
+Button
+--- on master branch, "is in QA"
+DDT aus Excel
+Pull-down-menu select 
+Checkboxen
+Pop-up window und Elemente drauf
+
+------------------------------------------
+fea getTitle - done
 fea Harness_Start_TC : nur aus UI oder auch Script?
 
-def Conn_to_Firefox : führt TC nur in eigenem Browser aus 
+deb Conn_to_Firefox : führt TC nur in eigenem Browser aus 
 	https://github.com/cypress-io/cypress/issues/22086
 	
-fea notepad++ als IDE
+fea notepad++ als IDE - done
 
 fea Team_More_Members; in free license 3 members possible
 

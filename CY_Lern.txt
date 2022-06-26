@@ -1,3 +1,7 @@
+https://www.lambdatest.com/blog/finding-html-elements-using-cypress-locators/
+
+
+
 - Im Browser, kein geckodriver
 - In der App - Zugriff auf alles
 - Lokal
