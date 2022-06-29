@@ -7,8 +7,5 @@
     "test": "test-cypress"
   },
   "author": "martin2",
-  "license": "ISC",
-  "dependencies": {
-    "cypress": "^9.7.0"
-  }
+  "license": "ISC"
 }

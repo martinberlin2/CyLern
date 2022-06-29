@@ -44,7 +44,7 @@ context('DOM_Attributes', () => {
 	todayDate.click()
 	let todate = cy.get('#qf-date') 
 	//alert(todate)
-	todate.should('have.value','So, 26.06.2022')
+	todate.should('have.value','Mo, 27.06.2022')
   })
   
   it('departTimeField_has_actual_Time', () => { 

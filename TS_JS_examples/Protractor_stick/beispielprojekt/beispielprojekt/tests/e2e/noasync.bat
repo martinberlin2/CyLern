@@ -1,0 +1,1 @@
+protractor conf_noasync > "./reports/reportnoasync.txt"

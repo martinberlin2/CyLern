@@ -1,0 +1,16 @@
+
+> example-typescript@1.0.0 tsc
+> tsc
+
+angularPage.ts(7,36): error TS2307: Cannot find module 'protractor' or its corresponding type declarations.
+spec.ts(8,67): error TS2307: Cannot find module 'protractor' or its corresponding type declarations.
+spec.ts(10,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+spec.ts(11,3): error TS2304: Cannot find name 'beforeEach'.
+spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+spec.ts(18,5): error TS2304: Cannot find name 'expect'.
+spec.ts(21,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+spec.ts(23,5): error TS2304: Cannot find name 'expect'.
+spec.ts(24,5): error TS2304: Cannot find name 'expect'.
+specPageObjects.ts(5,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+specPageObjects.ts(6,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+specPageObjects.ts(10,5): error TS2304: Cannot find name 'expect'.

@@ -1,0 +1,26 @@
+2106_Firste2e.txt
+
+bis dahin Slack beigetreten und konfiguriert, Security Training nochmal
+1300 - 1335 meeting
+1335 - 1455 Pause
+Meeting EZB intern - 1600
+pause
+1640 - CyLern Lern-Projekt: läuft dann unter 9 oder 10 besser ? Cy 9 PrivatPC, Cy 10 auticon-Labtop. --> cypress 10 ECONNRESET TCP.onStreamRead .... https://stackoverflow.com/questions/71294032/cypress-econnreset ---> wohl doch bei Version 9 bleiben
+
+... oder zuhause Cy 10 testen
+
+Worklab: 
+CY hat node-modules
+	und CyLern
+		das ist im home committed gewesen
+		
+jetzt: cy.bat zieht ..\ Verz an  (CY)
+Nur Lernsachen committen = Nur Lernverz !
+
+
+zuhause: auch!
+	cypress installation UNTER cylern und nur das Lern-Projekt committen
+
+Lern-Projekt: läuft dann unter 9 oder 10 besser ?
+
+---------
