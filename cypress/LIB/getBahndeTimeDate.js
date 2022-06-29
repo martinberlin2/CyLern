@@ -1,5 +1,6 @@
 // getBahndeTimeDate.js
 // path home: C:\Users\laoch\OneDrive\Dokumente\Meins\Eigenes_F\auticon\Lern\Testautomatisierung\Cy\cypress\LIB
+
 // https://www.geeksforgeeks.org/how-do-you-run-javascript-script-through-the-terminal/
 
 // If called with an invalid date string, ... it returns a Date object whose toString() method returns the literal string Invalid Date.

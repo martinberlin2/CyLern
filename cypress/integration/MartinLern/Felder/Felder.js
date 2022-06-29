@@ -1,5 +1,9 @@
 /// <reference types="cypress" />
-import getBahndeTimeDate from  ./../../../../../lib  
+
+import getBahndeTimeDate from  './../../../lib/getBahndeTimeDate'  //geht jetzt auf Lab
+// C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung\CY\CyLern\cypress\integration\MartinLern\Felder
+// C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung\CY\CyLern\cypress\LIB
+
 
 context('DOM_Attributes', () => {
  /*  beforeEach(() => {

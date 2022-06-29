@@ -6,6 +6,16 @@ second-branch INTO master
 git checkout -b <branch-name>   neuer Branch
    kein Blank zwischen -b  !!
 
+GIT: ab Lern committen, nicht Installation 
+nach git clone:basis-dir = Name Repo = cyLern !! man ist in der shell nch in master
+nach cd cyLern ist man in den Branches:
+	git branch --remotes
+	git switch FirstE2E   (ausschreiben! Tab-expand geht nicht) -->
+		Switched to a new branch 'develop'
+		Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+
+
+
 Erstmalig in Repo einchecken:
 git clone https://github.com/martinberlin2/CyLern
 
