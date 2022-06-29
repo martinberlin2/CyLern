@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
- 
+import getBahndeTimeDate from  ./../../../../../lib  
+
 context('DOM_Attributes', () => {
  /*  beforeEach(() => {
     cy.visit('https://auticon.de/')
@@ -37,6 +38,17 @@ context('DOM_Attributes', () => {
   it('calenderVisible_entering_departDate', () => { 
 	cy.get('.flatpickr-current-month', { timeout: 1000 }).should('be.visible');
   })
+
+  it('getSystemTimeAndDate', () =>{
+	  //import myFunc from ../../firstFolder/firstFile ; ./ ./ - this is the present working directory
+	  
+	//import getBahndeTimeDate from  ../../../../../lib      //\Cy\cypress\LIB
+	var dateAndTime = getBahndeTimeDate.now()
+	var bahndate = dateAndTime.date
+	var bahntime = dateAndTime.time
+	bahntime.should.be.a('string')
+  })
+
   
   it('picking_Today', () => { 
 	let todayMonth = cy.get('.flatpickr-current-month')
