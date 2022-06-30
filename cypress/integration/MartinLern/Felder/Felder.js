@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
-import getBahndeTimeDate from  './../../../lib/getBahndeTimeDate'  //geht jetzt auf Lab
+import {now}  from  './../../../lib/getBahndeTimeDate'  //geht jetzt auf Lab
+// var expect = require('expect.js');
 // C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung\CY\CyLern\cypress\integration\MartinLern\Felder
 // C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung\CY\CyLern\cypress\LIB
 
@@ -47,20 +48,38 @@ context('DOM_Attributes', () => {
 	  //import myFunc from ../../firstFolder/firstFile ; ./ ./ - this is the present working directory
 	  
 	//import getBahndeTimeDate from  ../../../../../lib      //\Cy\cypress\LIB
-	var dateAndTime = getBahndeTimeDate.now()
+	var dateAndTime = now() 	// getBahndeTimeDate.now
 	var bahndate = dateAndTime.date
 	var bahntime = dateAndTime.time
+	
+	// let dateAndTime = now()  geht
+	
+	console.log('dateAndTime.date ', bahndate)
+	console.log('dateAndTime.time ', bahntime)
+	//bahndate.should('have.value','Do, 30.06.2022')
+	
 	bahntime.should.be.a('string')
   })
 
   
   it('picking_Today', () => { 
+	var dateAndTime = now() 	// getBahndeTimeDate.now
+	var bahndate = dateAndTime.date
+  
 	let todayMonth = cy.get('.flatpickr-current-month')
 	let todayDate = todayMonth.get('.today').eq(0); //ok
 	todayDate.click()
 	let todate = cy.get('#qf-date') 
-	//alert(todate)
-	todate.should('have.value','Mo, 27.06.2022')
+	alert(todate)
+	
+	if (bahndate == todate) {
+        alert ("passed: fromdate == today is default")
+	}
+	else {
+		alert ("failed: fromdate == today is default")
+	}
+	
+	todate.should('have.value','Do, 30.06.2022')
   })
   
   it('departTimeField_has_actual_Time', () => { 
@@ -74,7 +93,7 @@ context('DOM_Attributes', () => {
    // Printing the converted string.
    document.write(B); */
     //---
-	let actTime = cy.clock(now)
+	let actTime = cy.clock()
 	let dateobj = new Date(actTime)
 	let B = dateobj.toString();
 	
@@ -82,6 +101,9 @@ context('DOM_Attributes', () => {
 	document.write(B);
 	
 	let departTime = cy.get('input[id="qf-time"]')
+	todate.should('have.value',bahntime)
+	
+	
 	departTime.click()
   })
   
