@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+
 
 import {now}  from  './../../../lib/getBahndeTimeDate'  //geht jetzt auf Lab
 // var expect = require('expect.js');
@@ -28,7 +28,6 @@ context('DOM_Attributes', () => {
   })
   
   it('destTown', () => { // geht nicht: Var re-use. Vor jeder Aktion neu
-   
 	let destTown = cy.get('#js-auskunft-autocomplete-to')
 	destTown.should('have.value','')
 	destTown.type('Minden').should('have.value','Minden').end
@@ -53,9 +52,6 @@ context('DOM_Attributes', () => {
 	bahndateObj.should('have.value','Fr, 01.07.2022')
   })
  
-  
-  
-  
  /*   it('JS direct', () => { // Var reuse
     // var fromtownfeld = document.getElementById("js-auskunft-autocomplete-from");
 	//fromtownfeld.should('have.value','XXBerlinx').end
