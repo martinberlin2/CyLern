@@ -6,4 +6,6 @@ jetzt Chrome. Selector Playground... ????
 
 21.6. 2106_Firste2e.txt ! Worklab: startet Cy 10 , zuhause Version 9
 
+1.7. bahnde-Testfall läuft bis Feld Abfahrtdatum. Cy 9 und Electron. Cy 10 Problem ungelöst, aber EZB macht kein Cy 10 und kein FF
+
 13.7. Bahn-Test läuft bis from actual Time - Feld ist mit aktueller Zeit vorbelegt

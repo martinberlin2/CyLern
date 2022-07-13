@@ -1,10 +1,12 @@
-/// <reference types="cypress" />
+
 
 import {now}  from  './../../../lib/getBahndeTimeDate'  //geht jetzt auf Lab
 // var expect = require('expect.js');
 // C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung\CY\CyLern\cypress\integration\MartinLern\Felder
 // C:\Users\Lap126\Documents\auticon\Lern\Testautomatisierung\CY\CyLern\cypress\LIB
-
+var dateAndTime = now() 	// getBahndeTimeDate.now
+var actDate = dateAndTime.date
+var actTime = dateAndTime.time
 
 context('DOM_Attributes', () => {
  /*  beforeEach(() => {
@@ -30,17 +32,18 @@ context('DOM_Attributes', () => {
   })
   
   it('destTown', () => { // geht nicht: Var re-use. Vor jeder Aktion neu
-   
 	let destTown = cy.get('#js-auskunft-autocomplete-to')
+	destTown.should('have.value','')
 	destTown.type('Minden').should('have.value','Minden').end
   })
   
-  it('departDate', () => { // GEHT: in Var. speichern 
-	let departDate = cy.get('input[id="qf-date"]')
-	departDate.click()
+  it('Calender departDate at start not visible', () => { 
+	cy.get('.flatpickr-current-month', { timeout: 1000 }).should('be.not.visible');
   })
   
-  it('calenderVisible_entering_departDate', () => { 
+  it('calenderVisible_afterClick_departDate', () => { 
+	let departDate = cy.get('input[id="qf-date"]')	
+	departDate.click()
 	cy.get('.flatpickr-current-month', { timeout: 1000 }).should('be.visible');
   })
 
@@ -71,11 +74,12 @@ context('DOM_Attributes', () => {
   
 	let todayMonth = cy.get('.flatpickr-current-month')
 	let todayDate = todayMonth.get('.today').eq(0); //ok
-	todayDate.click()
+	
 	let todate = cy.get('#qf-date')
 		
 	todate.should('have.value','Mi, 13.07.2022')
 	todate.should('have.value',bahndate)
+	todayDate.click()
   })
   
   it('departTimeField_has_actual_Time', () => { 
@@ -87,7 +91,7 @@ context('DOM_Attributes', () => {
 	
 	//departTimeField.click()
   })
-  
+
   //Find the element with id that starts with "local-"
   //cy.get('[id^=local-]')
 
