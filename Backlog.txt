@@ -16,13 +16,16 @@ Checkboxen
 Pop-up window und Elemente drauf
 
 ------------------------------------------
+
+fea Filter disablen in Tabelle
+fea FelderBasistest: Mussfeld Schrift ist fett 
 fea getTitle - done
 fea Harness_Start_TC : nur aus UI oder auch Script?
 
 deb Conn_to_Firefox : führt TC nur in eigenem Browser aus 
 	https://github.com/cypress-io/cypress/issues/22086
-	
-fea notepad++ als IDE - done
+
+deb wohin geht console.log ?
 
 fea Team_More_Members; in free license 3 members possible
 

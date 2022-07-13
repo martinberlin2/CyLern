@@ -5,3 +5,5 @@ in der Shell Still waiting to connect to Firefox, retrying in 1 second (attempt 
 jetzt Chrome. Selector Playground... ????
 
 21.6. 2106_Firste2e.txt ! Worklab: startet Cy 10 , zuhause Version 9
+
+13.7. Bahn-Test läuft bis from actual Time - Feld ist mit aktueller Zeit vorbelegt

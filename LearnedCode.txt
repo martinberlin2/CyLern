@@ -1,0 +1,35 @@
+https://lambdageeks.com/cypress-assertion/#:~:text=Cypress%20Assertion%20helps%20us%20to%20assert%20a%20particular,case%20fails%20ensuring%20that%20there%20is%20a%20bug.
+
+Formatierung
+ it('validates and formats first name', () => {
+    cy.get('#first')
+      .type('ashok')
+      .should('have.attr', 'data-validation', 'required')
+      .and('have.class', 'active')
+      .and('have.value', 'Ashok')
+  })
+
+
+let todate = cy.get('#qf-date')
+alert(todate.toString())  // fails, kein toString für Elemente
+	
+expect(todate).to.have.value(bahndate)  Falsch
+todate.should('have.value',bahndate)    Richtig
+
+!!:
+should nach cy.get.... , Promises
+expect für normal Variablen
+
+
+beides ok:
+expect(bahndate).to.equal('Mi, 13.07.2022')
+expect(bahndate).to.satisfy((num) => { return num == 'Mi, 13.07.2022' })
+
+möglich, aber damit failed der Test nicht
+if (bahndate == todate) {
+        alert ("passed: fromdate == today is default")
+	}
+	else {
+		alert ("failed: fromdate == today is default")
+	}
+	

@@ -19,7 +19,7 @@ context('DOM_Attributes', () => {
 	cy.title().should('eq','DB Fahrplan, Auskunft, Tickets, informieren und buchen - Deutsche Bahn')
   })
   
-    it('Calender at start not visible', () => { 
+  it('Calender at start not visible', () => { 
 	cy.get('.flatpickr-current-month', { timeout: 1000 }).should('be.not.visible');
   })
   
@@ -53,73 +53,40 @@ context('DOM_Attributes', () => {
 	var bahntime = dateAndTime.time
 	
 	// let dateAndTime = now()  geht
-	
-	console.log('dateAndTime.date ', bahndate)
-	console.log('dateAndTime.time ', bahntime)
-	//bahndate.should('have.value','Do, 30.06.2022')
-	
-	bahntime.should.be.a('string')
+	// alert('dateAndTime.date ' + bahndate)
+	// alert('dateAndTime.time ' + bahntime)
+	// expect(bahndate).'have.value','Di, 12.07.2022'  ??
+	expect(bahndate).to.equal('Mi, 13.07.2022')
+	expect(bahntime).to.be.a('string')
+
+	//bahntime.should('be.a.string') geht nicht
   })
 
   
   it('picking_Today', () => { 
 	var dateAndTime = now() 	// getBahndeTimeDate.now
 	var bahndate = dateAndTime.date
+	expect(bahndate).to.equal('Mi, 13.07.2022')
+	expect(bahndate).to.satisfy((num) => { return num == 'Mi, 13.07.2022' })
   
 	let todayMonth = cy.get('.flatpickr-current-month')
 	let todayDate = todayMonth.get('.today').eq(0); //ok
 	todayDate.click()
-	let todate = cy.get('#qf-date') 
-	alert(todate)
-	
-	if (bahndate == todate) {
-        alert ("passed: fromdate == today is default")
-	}
-	else {
-		alert ("failed: fromdate == today is default")
-	}
-	
-	todate.should('have.value','Do, 30.06.2022')
+	let todate = cy.get('#qf-date')
+		
+	todate.should('have.value','Mi, 13.07.2022')
+	todate.should('have.value',bahndate)
   })
   
   it('departTimeField_has_actual_Time', () => { 
- /*   var dateobj =
-   new Date('October 15, 1996 05:35:32');
- 
-   // Contents of above date object is converted
-   // into a string using toString() function.
-   var B = dateobj.toString();
- 
-   // Printing the converted string.
-   document.write(B); */
-    //---
-	let actTime = cy.clock()
-	let dateobj = new Date(actTime)
-	let B = dateobj.toString();
+	var dateAndTime = now() 	// getBahndeTimeDate.now
+	var bahntime = dateAndTime.time
+	// alert('dateAndTime.time ' + bahntime) //geht
+	let departTimeField = cy.get('input[id="qf-time"]')
+	departTimeField.should('have.value',bahntime)
 	
-	alert(B)
-	document.write(B);
-	
-	let departTime = cy.get('input[id="qf-time"]')
-	todate.should('have.value',bahntime)
-	
-	
-	departTime.click()
+	//departTimeField.click()
   })
-  
-  
-  
-  
- /*   it('JS direct', () => { // Var reuse
-    // var fromtownfeld = document.getElementById("js-auskunft-autocomplete-from");
-	//fromtownfeld.should('have.value','XXBerlinx').end
-	fromtown.should('have.value','XXBerlinx').end
-  }) */
-  //var button = document.getElementById("button");
-  
-  //<input id="js-auskunft-autocomplete-from" type="text" class="text label-inside from-ab autocomplete js-expand-tab-trigger" placeholder="Bahnhof / Haltestelle / Adresse" name="S" data-type="S" data-form="auskunft" autocomplete="off">
-  
-  // cy.get('button[id="category"]').click()
   
   //Find the element with id that starts with "local-"
   //cy.get('[id^=local-]')
